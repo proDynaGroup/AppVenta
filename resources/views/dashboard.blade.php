@@ -11,5 +11,10 @@
                 <x-jet-welcome />
             </div>
         </div>
+
+        <div class="font-medium text-base text-gray-800">
+            {{ Auth::user()->email }}
+        </div>
+
     </div>
 </x-app-layout>
