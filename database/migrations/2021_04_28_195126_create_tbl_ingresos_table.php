@@ -21,7 +21,7 @@ class CreateTblIngresosTable extends Migration
             
             $table->string('ing_desc',100);
             $table->double('ing_costo',5,2);
-            $table->timestamps('ing_fecha');
+            $table->date('ing_fecha');
         });
     }
 

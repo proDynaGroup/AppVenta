@@ -28,7 +28,7 @@ class CreateTblProductoTable extends Migration
             $table->string('pro_des',100);
             $table->double('pro_precio',4,2);
             $table->string('pro_obser',100);
-            $table->timestamp('pro_fecha');
+            $table->date('pro_fecha');
             $table->double('pro_ganancia',4,2);
            
             

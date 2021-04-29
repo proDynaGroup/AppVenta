@@ -15,11 +15,11 @@ class CreateTblLoginTable extends Migration
     {
         Schema::create('tbl_login', function (Blueprint $table) {
             $table->id('log_id');
-            
+
             $table->unsignedBigInteger('usu_id')->nullable();
             $table->foreign('usu_id')->references('usu_id')->on('tbl_usuario')->onDelete('set null');
 
-            $table->timestamps('log_fecha');
+            $table->date('log_fecha');
         });
     }
 
