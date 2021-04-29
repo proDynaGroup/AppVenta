@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTblEgresosTable extends Migration
+class CreateTblClienteTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,14 @@ class CreateTblEgresosTable extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_egresos', function (Blueprint $table) {
-            $table->id('egr');
+        Schema::create('tbl_cliente', function (Blueprint $table) {
+            $table->id('cli_id');
 
             $table->unsignedBigInteger('pro_id')->nullable();
             $table->foreign('pro_id')->references('pro_id')->on('tbl_producto')->onDelete('set null');
-
-            $table->string('egr_desc',100);
-            $table->double('egr_costo',5,2);
-
-            $table->date('egr_fecha');
-
+            
+            $table->string('cli_nombre',100);
+            $table->string('cli_telefono',100);
         });
     }
 
@@ -34,6 +31,6 @@ class CreateTblEgresosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_egresos');
+        Schema::dropIfExists('tbl_cliente');
     }
 }
