@@ -18,8 +18,8 @@ class CreateTblDevolucionTable extends Migration
 
             $table->unsignedBigInteger('pro_id')->nullable();
             $table->foreign('pro_id')->references('pro_id')->on('tbl_producto')->onDelete('set null');
-            
-            $table->timestamp('dev_fecha');
+
+            //$table->timestamp('dev_fecha');
             $table->integer('dev_cantidad');
         });
     }

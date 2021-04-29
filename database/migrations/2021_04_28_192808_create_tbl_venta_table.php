@@ -15,11 +15,11 @@ class CreateTblVentaTable extends Migration
     {
         Schema::create('tbl_venta', function (Blueprint $table) {
             $table->id('vent_id');
-            
+
             $table->unsignedBigInteger('pro_id')->nullable();
             $table->foreign('pro_id')->references('pro_id')->on('tbl_producto')->onDelete('set null');
 
-            $table->timestamps('vent_fecha');
+           // $table->timestamps('vent_fecha');
             $table->integer('vent_cantidad');
         });
     }

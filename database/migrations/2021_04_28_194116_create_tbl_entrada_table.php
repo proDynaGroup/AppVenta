@@ -18,8 +18,10 @@ class CreateTblEntradaTable extends Migration
 
             $table->unsignedBigInteger('pro_id')->nullable();
             $table->foreign('pro_id')->references('pro_id')->on('tbl_producto')->onDelete('set null');
+
             
             $table->date('ent_fecha');
+
             $table->integer('ent_cantidad');
         });
     }
