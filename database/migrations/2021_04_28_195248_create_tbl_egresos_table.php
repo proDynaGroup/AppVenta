@@ -18,10 +18,10 @@ class CreateTblEgresosTable extends Migration
 
             $table->unsignedBigInteger('pro_id')->nullable();
             $table->foreign('pro_id')->references('pro_id')->on('tbl_producto')->onDelete('set null');
-            
+
             $table->string('egr_desc',100);
             $table->double('egr_costo',5,2);
-            $table->timestamps('egr_fecha');
+            //$table->timestamps('egr_fecha');
         });
     }
 

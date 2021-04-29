@@ -17,6 +17,11 @@ Route::get('test', function () {
     return view('test');
 })->name('test');
 
+Route::get('submenu', function () {
+
+    return view('test2');
+})->name('sub');
+
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
