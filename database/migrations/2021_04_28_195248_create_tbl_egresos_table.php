@@ -21,7 +21,9 @@ class CreateTblEgresosTable extends Migration
 
             $table->string('egr_desc',100);
             $table->double('egr_costo',5,2);
-            //$table->timestamps('egr_fecha');
+
+            $table->date('egr_fecha');
+
         });
     }
 
