@@ -55,8 +55,8 @@ return [
     */
 
 
-    'asset_url' => 'http://localhost/AppVenta/pub
- 
+    'asset_url' => 'http://localhost/AppVenta/public',
+
 
     /*
     |--------------------------------------------------------------------------
