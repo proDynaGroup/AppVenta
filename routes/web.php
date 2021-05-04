@@ -23,13 +23,11 @@ Route::get('submenu', function () {
 })->name('sub');
 
 Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+    return view('Seguridad.login');
+})->name('login');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('master', function () {
+    return view('master');
+})->name('master');
 
-Route::get('ejemplo',function(){
-return view('ejemplo');
-});
+
