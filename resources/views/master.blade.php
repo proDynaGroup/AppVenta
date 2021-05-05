@@ -143,7 +143,7 @@
                                             d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                     </svg>
                                 </span>
-                                <span class="ml-2 text-sm"> Pages </span>
+                                <span class="ml-2 text-sm"> Paginas </span>
                                 <span aria-hidden="true" class="ml-auto">
                                     <!-- active class 'rotate-180' -->
                                     <svg class="w-4 h-4 transition-transform transform" :class="{ 'rotate-180': open }"
@@ -159,23 +159,23 @@
                                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                                 <a href="#" role="menuitem"
                                     class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                                    Blank
+                                    Productos
                                 </a>
                                 <a href="#" role="menuitem"
                                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                                    Profile
+                                    Compras
                                 </a>
                                 <a href="#" role="menuitem"
                                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                    Pricing
+                                    Ventas
                                 </a>
                                 <a href="#" role="menuitem"
                                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                    Kanban
+                                    Clientes
                                 </a>
                                 <a href="#" role="menuitem"
                                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                    Feed
+                                    Reportes
                                 </a>
                             </div>
                         </div>
@@ -498,7 +498,7 @@
                                     <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                                        Default
+                                        dario
                                     </a>
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
@@ -595,28 +595,28 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" arial-label="Pages">
+                                <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" arial-label="Contenido">
                                     <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                                     <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                                        Blank
+                                        Productos
                                     </a>
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                                        Profile
+                                        Compras
                                     </a>
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                        Pricing
+                                        Ventas
                                     </a>
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                        Kanban
+                                        Cliente 
                                     </a>
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                        Feed
+                                        Reportes
                                     </a>
                                 </div>
                             </div>
@@ -669,17 +669,7 @@
 
                 <!-- Main content -->
                 <div class="flex items-center justify-center flex-1 h-full p-4">
-                    <main class="space-y-4">
-                        <p class="text-base font-medium">
-                            See full project with all finished pages
-                        </p>
-                        <div class="space-x-4">
-                            <a href="https://kamona-wd.github.io/kwd-dashboard/" target="_blank"
-                                class="inline-block text-blue-600 hover:underline">Live</a>
-                            <a href="https://github.com/Kamona-WD/kwd-dashboard" target="_blank"
-                                class="inline-block text-blue-600 hover:underline">Github repo</a>
-                        </div>
-                    </main>
+                    @yield('content')
                 </div>
 
             </div>

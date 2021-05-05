@@ -30,4 +30,6 @@ Route::get('master', function () {
     return view('master');
 })->name('master');
 
-
+Route::get('producto', function () {
+    return view('producto.producto');
+})->name('producto');
