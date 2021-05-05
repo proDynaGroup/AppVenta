@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('test', function () {
-    return view('test');
-})->name('test');
+
 
 Route::get('master', function () {
 
@@ -23,10 +21,6 @@ Route::get('master', function () {
 
 })->name('master');
 
-Route::get('submenu', function () {
-
-    return view('test2');
-})->name('sub');
 
 Route::get('/', function () {
     return view('welcome');
