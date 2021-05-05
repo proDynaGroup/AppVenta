@@ -1,9 +1,10 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot> 
+@extends('master')
+
+@section('title','Dashboard')
 
 
-</x-app-layout>
+@section('content')
+
+
+
+@endsection
