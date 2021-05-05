@@ -21,7 +21,7 @@
 <!-- component -->
 
 <body>
-    <!--  primer login 
+    <!--  primer login
     <section class="min-h-screen flex items-stretch text-white ">
         <div class="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center"
             style="background-image: url('https://source.unsplash.com/K4mSJ7kc0As/600x800');">
@@ -114,7 +114,7 @@
     <!-- component -->
 
 
-    
+
     <section class="flex flex-col md:flex-row h-screen items-center" >
 
         <div class="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
@@ -127,7 +127,7 @@
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg" style="padding-top: 6rem;">
 
                 <center><img src="{{asset('img/logo.png')}}"/>
-                <h1 class="text-xl md:text-2xl font-bold leading-tight mt-12">Sistema de Ventas </h1></center> 
+                <h1 class="text-xl md:text-2xl font-bold leading-tight mt-12">Sistema de Ventas </h1></center>
                 <br>
 
                 <x-guest-layout>
@@ -185,15 +185,15 @@
 
                 </x-guest-layout>
 
-               
 
-                
+
+
 
 
             </div>
         </div>
 
-    </section> 
+    </section>
 
 </body>
 

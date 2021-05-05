@@ -24,10 +24,12 @@ Route::get('master', function () {
 
 Route::get('/', function () {
     return view('Seguridad.login');
-})->name('login');
+})->name('log');
 
-Route::get('master', function () {
-    return view('master');
-})->name('master');
+Route::get('dashboard', function () {
+
+    return view('dashboard');
+
+})->name('dashboard');
 
 
