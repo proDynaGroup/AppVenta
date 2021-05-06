@@ -54,6 +54,9 @@
                                 aria-haspopup="true" :aria-expanded="(open || isActive) ? 'true' : 'false'">
 
 
+                              
+                           
+
 
 
                                 <span><i class="fas fa-dolly"></i></span>
@@ -74,8 +77,11 @@
                                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
 
 
+                                
                                 <a href="#" role="menuitem"
                                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
+                                   
+
                                     <i class="fas fa-sitemap"></i> Categorias
                                 </a>
                                 <a href="{{route('producto.list')}}" role="menuitem"

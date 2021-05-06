@@ -16,6 +16,8 @@ class ShowProductos extends Component
         $productos = Producto::where('emp_id',Auth::user()->emp_id)
                      ->join('tbl_categoria','tbl_producto.cat_id','=',
                             'tbl_categoria.cat_id')
+                     ->join('tbl_proveedor','tbl_producto.prv_id','=',
+                            'tbl_proveedor.prv_id') 
                      ->get();
 
         return view('livewire.show-productos',compact('productos'));
