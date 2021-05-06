@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/master.css') }}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
+
     <title>@yield('title')</title>
 </head>
 
@@ -53,14 +53,10 @@
                                 :class="{ 'bg-blue-100 dark:bg-blue-600': isActive || open }" role="button"
                                 aria-haspopup="true" :aria-expanded="(open || isActive) ? 'true' : 'false'">
 
-                                <span aria-hidden="true">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                                    </svg>
-                                </span>
-                                <span class="ml-2 text-sm"> Paginas </span>
+
+                              
+                           
+
 
 
                                 <span><i class="fas fa-dolly"></i></span>
@@ -81,26 +77,10 @@
                                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
 
 
-                                <a href="#" role="menuitem"
-                                    class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-
-                                    Productos
-                                </a>
-                                <a href="#" role="menuitem"
-                                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                                    Compras
-                                </a>
+                                
                                 <a href="#" role="menuitem"
                                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                    Ventas
-                                </a>
-                                <a href="#" role="menuitem"
-                                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                    Clientes
-                                </a>
-                                <a href="#" role="menuitem"
-                                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                    Reportes
+                                   
 
                                     <i class="fas fa-sitemap"></i> Categorias
                                 </a>
@@ -553,7 +533,7 @@
                                     </a>
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                        Cliente 
+                                        Cliente
                                     </a>
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
