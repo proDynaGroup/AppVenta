@@ -1,7 +1,7 @@
-      
+
 <!-- Button trigger modal -->
 
-  <!-- Modal 
+  <!-- Modal
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -20,10 +20,10 @@
     </div>
   </div>
   -->
-   
-    
-    {{-- Ventana para agregar --}} 
-       
+
+
+    {{-- Ventana para agregar --}}
+
 <div class="container">
   <div class="modal fade" tabindex="-1" id="add">
 
@@ -31,12 +31,12 @@
 
 
         <div class="modal-content">
-            
-            <div class="modal-header">       
-                    @yield('header-add')     
-                <button class="close" data-dismiss="modal">&times;</button>
+
+            <div class="modal-header">
+                    @yield('header-add')
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        
+
             <div class="modal-body">
                 @yield('body-add')
             </div>
@@ -63,7 +63,7 @@
 
                 <div class="modal-header">
                     @yield('header-edit')
-                    <button class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">
@@ -95,7 +95,7 @@
 
                 <div class="modal-header">
                     @yield('header-show')
-                    <button class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">
@@ -128,10 +128,14 @@
 
                 <div class="modal-header">
                     @yield('header-delete')
-                    <h5 class="modal-title"> <i class="fas fa-exclamation-triangle"></i> Advertencia</h5>
-                    <button class="close" data-dismiss="modal">&times;</button>
-                </div>
 
+                        <div>
+                            <h5 class="modal-title"> <i class="fas fa-exclamation-triangle"></i> Advertencia</h5>
+                        </div>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            
                 <div class="modal-body">
                     @yield('body-delete')
                 </div>
