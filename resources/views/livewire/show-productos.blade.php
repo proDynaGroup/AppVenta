@@ -1,49 +1,105 @@
-<div>
+<div class="container">
 
+    
+    <main class="flex-1 max-h-full p-5 overflow-hidden overflow-y-scroll" style="background-color:#f4f4f3; ">
+        <!-- Main content header -->
+        <div class="flex flex-col items-start justify-between pb-6 space-y-4 border-b lg:items-center lg:space-y-0 lg:flex-row" >
 
-     <div class="w-full mt-6 px-6 py-3 bg-white shadow-sm overflow-hidden sm:rounded-lg" >
+         
+          <div class="space-y-6 md:space-x-2 md:space-y-0">
+            
+          
+          </div>
+        </div>
+        
+       
+        <!-- Start Content -->
+        <div class="grid grid-cols-1 gap-5 mt-6 sm:grid-cols-2 lg:grid-cols-4">
+         
+        </div>
+        
+         
+        <!-- Table see (https://tailwindui.com/components/application-ui/lists/tables) -->
+      
+       
+        <!-- Button -->
 
-        <div class="table-responsive">
+        <div class="flex flex-col mt-6">
 
-            <div class="table table-striped table-bordered table-hover">
+            
+          <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+              <div class="overflow-hidden border-b border-gray-200 rounded-md shadow-md">
+                <table class="min-w-full overflow-x-scroll divide-y divide-gray-200">
+                  <thead class="bg-gray-50" >
+                    <tr>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-xs font-medium tracking-wider  text-gray-500 uppercase"
+                      >
+                        Código
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-xs font-medium tracking-wider  text-gray-500 uppercase"
+                      >
+                        Nombre
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-xs font-medium tracking-wider  text-gray-500 uppercase"
+                      >
+                        Categoría
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-xs font-medium tracking-wider  text-gray-500 uppercase"
+                      >
+                        Proveedor
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-xs font-medium tracking-wider  text-gray-500 uppercase"
+                      >
+                        Precio
+                      </th>
+                      <th
+                      scope="col"
+                      class="px-6 py-3 text-xs font-medium tracking-wider  text-gray-500 uppercase"
+                    >
+                      Stock
+                    </th>
+                     <th>
 
-                <table >
-                    <thead class="bg-gray-800 text-white text-center">
-                      <tr>
-                        <th>Código</th>
-                        <th>Nombre</th>
-                        <th>Categoría</th>
-                        <th>Descripción</th>
-                        <th>Precio</th>
-                        <th>Stock</th>
-                        <th>Fecha de creación</th>
-                      </tr>
-                    </thead>
+                     </th>
+                    </tr>
+                  </thead>
                     <tbody class="bg-white  text-center">
                         @foreach ($productos as $producto)
-                      <tr>
+                      <tr class="transition-all hover:bg-gray-100 hover:shadow-lg">
 
-                            <td >
+                            <td class="px-6 py-4 whitespace-nowrap">
                                 {{$producto->pro_codigo}}
                             </td>
-                            <td >
+                            <td class="px-6 py-4 whitespace-nowrap" >
                                 {{$producto->pro_nombre}}
                             </td>
-                            <td >
+                            <td class="px-6 py-4 whitespace-nowrap" >
                                 {{$producto->cat_nombre}}
                             </td>
-                            <td >
-                                {{$producto->pro_des}}
+                            <td class="px-6 py-4 whitespace-nowrap" >
+                                {{$producto->prv_nombre}}
                             </td>
-                            <td >
+                            <td class="px-6 py-4 whitespace-nowrap" >
                                 {{$producto->pro_precio}}
                             </td>
-                            <td >
+                            <td class="px-6 py-4 whitespace-nowrap" >
                                 {{$producto->pro_stock}}
                             </td>
-                            <td >
-                                {{$producto->pro_fecha}}
+                            <td>
+                               
                             </td>
+                         
 
 
                       </tr>
@@ -51,7 +107,6 @@
                     </tbody>
                   </table>
 
-            </div>
 
         </div>
 
