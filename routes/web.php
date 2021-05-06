@@ -13,22 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('test', function () {
-    return view('test');
-})->name('test');
 
-Route::get('submenu', function () {
 
-    return view('test2');
-})->name('sub');
+Route::get('master', function () {
+
+    return view('master');
+
+})->name('master');
+
 
 Route::get('/', function () {
     return view('Seguridad.login');
-})->name('login');
+})->name('log');
 
-Route::get('master', function () {
-    return view('master');
-})->name('master');
+Route::get('dashboard', function () {
+
+    return view('dashboard');
+
+})->name('dashboard');
 
 Route::get('producto', function () {
     return view('producto.producto');
