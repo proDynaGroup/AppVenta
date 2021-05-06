@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/master.css') }}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
+
     <title>@yield('title')</title>
 </head>
 
@@ -52,20 +52,13 @@
                                 class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-blue-100 dark:hover:bg-blue-600"
                                 :class="{ 'bg-blue-100 dark:bg-blue-600': isActive || open }" role="button"
                                 aria-haspopup="true" :aria-expanded="(open || isActive) ? 'true' : 'false'">
-<<<<<<< HEAD
-                                <span aria-hidden="true">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                                    </svg>
-                                </span>
-                                <span class="ml-2 text-sm"> Paginas </span>
-=======
+
+
+
 
                                 <span><i class="fas fa-dolly"></i></span>
                                 <span class="ml-2 text-sm"> Producto</span>
->>>>>>> 2a2c12771015bd317f359196cff3c2d2e383174d
+
                                 <span aria-hidden="true" class="ml-auto">
                                     <!-- active class 'rotate-180' -->
                                     <svg class="w-4 h-4 transition-transform transform" :class="{ 'rotate-180': open }"
@@ -82,32 +75,13 @@
 
 
                                 <a href="#" role="menuitem"
-                                    class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-<<<<<<< HEAD
-                                    Productos
-                                </a>
-                                <a href="#" role="menuitem"
-                                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                                    Compras
-                                </a>
-                                <a href="#" role="menuitem"
                                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                    Ventas
-                                </a>
-                                <a href="#" role="menuitem"
-                                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                    Clientes
-                                </a>
-                                <a href="#" role="menuitem"
-                                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                    Reportes
-=======
                                     <i class="fas fa-sitemap"></i> Categorias
                                 </a>
                                 <a href="{{route('producto.list')}}" role="menuitem"
                                     class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                                     <i class="fas fa-clipboard-list"></i> Lista de productos
->>>>>>> 2a2c12771015bd317f359196cff3c2d2e383174d
+
                                 </a>
                             </div>
                         </div>
@@ -553,7 +527,7 @@
                                     </a>
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                                        Cliente 
+                                        Cliente
                                     </a>
                                     <a href="#" role="menuitem"
                                         class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
