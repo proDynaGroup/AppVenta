@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,25 +14,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
-Route::get('master', function () {
-
-    return view('master');
-
-})->name('master');
-
-
 Route::get('/', function () {
     return view('Seguridad.login');
-})->name('log');
+})->name('loginAuth');
 
-Route::get('dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('dashboard', function () {
 
     return view('dashboard');
 
 })->name('dashboard');
 
+
 Route::get('producto', function () {
     return view('producto.producto');
 })->name('producto');
+
+Route::get('producto/list',[ProductoController::class,'list'])->name('producto.list');
+
+Route::get('welcome', function () {
+
+    return view('welcome');
+});
+
+

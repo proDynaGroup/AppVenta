@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/master.css') }}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
     <title>@yield('title')</title>
 </head>
 
@@ -103,14 +104,14 @@
 =======
                                     <i class="fas fa-sitemap"></i> Categorias
                                 </a>
-                                <a href="#" role="menuitem"
+                                <a href="{{route('producto.list')}}" role="menuitem"
                                     class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                                     <i class="fas fa-clipboard-list"></i> Lista de productos
 >>>>>>> 2a2c12771015bd317f359196cff3c2d2e383174d
                                 </a>
                             </div>
                         </div>
-                        
+
                         <!-- Authentication links -->
                         <div x-data="{ isActive: false, open: false}">
                             <!-- active & hover classes 'bg-blue-100 dark:bg-blue-600' -->
@@ -608,9 +609,9 @@
                 </header>
 
                 <!-- Main content -->
-                <div class="flex items-center justify-center flex-1 h-full p-4">
+
                     @yield('content')
-                </div>
+
 
             </div>
 
