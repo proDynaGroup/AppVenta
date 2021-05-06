@@ -1,9 +1,12 @@
+
+
 @extends('master')
 
 @section('content')
 
 
-      @livewire('show-productos')
+@livewire('add-product')
 
+@livewire('show-productos')
 
 @endsection
