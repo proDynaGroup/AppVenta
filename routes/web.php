@@ -24,10 +24,16 @@ Route::middleware(['auth:sanctum', 'verified'])->get('dashboard', function () {
 
 })->name('dashboard');
 
+
+Route::get('producto', function () {
+    return view('producto.producto');
+})->name('producto');
+
 Route::get('producto/list',[ProductoController::class,'list'])->name('producto.list');
 
 Route::get('welcome', function () {
 
     return view('welcome');
 });
+
 
