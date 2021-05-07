@@ -1,6 +1,10 @@
 
 <div >
 
+
+
+    <input type="hidden" value="{{Auth::user()->emp_id}}" wire:mmodel.defer="empresa">
+
     {{-- <x-jet-button data-bs-toggle="modal" data-bs-target="#add" >
         Registar Producto
     </x-jet-button> --}}
@@ -28,14 +32,14 @@
                   <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
                     Nombre
                   </label>
-                  <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3" id="grid-first-name" type="text" placeholder="Jane">
+                  <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3" id="nombre" type="text" placeholder="" wire:model.defer="nombre">
 
                 </div>
                 <div class="md:w-1/2 px-3">
                   <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
                     Precio
                   </label>
-                  <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-last-name" type="number" placeholder="Doe">
+                  <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="precio" type="number" placeholder="Doe" wire:model.defer="precio">
                 </div>
               </div>
 
@@ -48,11 +52,11 @@
                       Categoría
                     </label>
                     <div class="relative">
-                      <select class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded" id="grid-state">
-                        <option>New Mexico</option>
-                        <option>Missouri</option>
-                        <option>Texas</option>
-                      </select>
+                        <select class="form-select" name="tipo" wire:model.defer="cat">
+                            @foreach ($categorias as $categoria)
+                                <option value="{{$categoria->cat_id}}">{{$categoria->cat_nombre}}</option>
+                            @endforeach
+                        </select>
 
                     </div>
                   </div>
@@ -62,11 +66,11 @@
                       Proveedor
                     </label>
                     <div class="relative">
-                      <select class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded" id="grid-state">
-                        <option>New Mexico</option>
-                        <option>Missouri</option>
-                        <option>Texas</option>
-                      </select>
+                        <select class="form-select" name="tipo" wire:model.defer="prv">
+                            @foreach ($proveedores as $proveedor)
+                                <option value="{{$proveedor->prv_id}}">{{$proveedor->prv_nombre}}</option>
+                            @endforeach
+                        </select>
 
                     </div>
                   </div>
@@ -79,7 +83,7 @@
                   <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
                     Stock
                   </label>
-                  <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-last-name" type="number" placeholder="Doe">
+                  <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-last-name" type="number" placeholder="Doe" wire:model.defer="stock">
                 </div>
               </div>
 
@@ -88,7 +92,7 @@
                 <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
                     Descripción
                 </label>
-                <textarea class="w-full" name="" id="" cols="6" rows="4">
+                <textarea class="w-full" name="" id="" cols="6" rows="4" wire:model.defer="descrip">
 
                 </textarea>
 
@@ -99,7 +103,7 @@
                 <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
                     Observaciones
                 </label>
-                <textarea class="w-full" name="" id="" cols="6" rows="4">
+                <textarea class="w-full" name="" id="" cols="6" rows="4" wire:model.defer="observ">
 
                 </textarea>
 

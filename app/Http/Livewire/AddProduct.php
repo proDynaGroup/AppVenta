@@ -12,6 +12,10 @@ class AddProduct extends Component
 {
 
     public $op = false;
+    public $nombre,$precio,
+            $cat,$prv,$stock,
+            $descrip,$observ;
+    public $empresa ;
 
     public function addProduct(){
 
@@ -19,14 +23,14 @@ class AddProduct extends Component
         Producto::create([
 
             'pro_codigo'=>'123',
-            'emp_id'=>1,
-            'prv_id'=>1,
-            'cat_id'=>1,
-            'pro_nombre'=>'hola',
-            'pro_stock'=>4,
-            'pro_des'=>'dwed',
-            'pro_precio'=>99,
-            'pro_obser'=>'ferf',
+            'emp_id'=>$this->empresa,
+            'prv_id'=>$this->prv,
+            'cat_id'=>$this->cat,
+            'pro_nombre'=>$this->nombre,
+            'pro_stock'=>$this->stock,
+            'pro_des'=>$this->descrip,
+            'pro_precio'=>$this->precio,
+            'pro_obser'=>$this->observ,
             'pro_fecha'=>'2021-05-12',
             'pro_ganancia'=>99
         ]);
