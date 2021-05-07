@@ -5,15 +5,20 @@
         Registar Producto
     </x-jet-button> --}}
 
-     <x-jet-button wire:click="$set('open',true)" >
+     <x-jet-button wire:click="$set('op',true)" >
         Registar Producto
     </x-jet-button>
 
 
 
-    <x-jet-dialog-modal wire:model="open">
+    <x-jet-dialog-modal wire:model="op">
 
         <x-slot name="title">
+            <center>
+                <h2>
+                    Registrar producto
+                </h2>
+            </center>
         </x-slot>
 
         <x-slot name="content">
@@ -104,6 +109,9 @@
 
         <x-slot name="footer">
 
+            <x-jet-secondary-button wire:click="$set('op',false)">
+                Cancelar
+            </x-jet-secondary-button>
             <x-jet-button wire:click="addProduct" >
                 Registar
             </x-jet-button>

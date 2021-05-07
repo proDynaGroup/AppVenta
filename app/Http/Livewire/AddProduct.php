@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 class AddProduct extends Component
 {
 
-    public $open = false;
+    public $op = false;
 
     public function addProduct(){
 
